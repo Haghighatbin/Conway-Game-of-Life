@@ -1,7 +1,7 @@
 # Conway's Game of Life
-A simple implementation of John Horton Conway's cellular automaton Game of Life. Game of Life is classified as a zero-player game which the future state and evolution is determined by the initial state of the trajectory. 
+A simple implementation of John Horton Conway's cellular automaton Game of Life. Game of Life is classified as a Game of Life is a zero-player game where the evolution of the system is entirely determined by its initial state. 
 
-The code generates the initial pattern randomly which the populated proportion of the map could be defined initially (Default: 0.1 [%10]) as well as the screen and the block size. The next generation will be iterated abd mapped by analysing the current status of each cell.
+The code randomly generates the initial pattern. You can configure the population density (default: 0.1, or 10%), along with screen size and block size. Each subsequent generation is computed by analyzing the current state of each cell and applying Conway's rules.
 
 # Rules
 - Any live cell with fewer than two live neighbours dies (underpopulation).
@@ -12,9 +12,10 @@ The code generates the initial pattern randomly which the populated proportion o
 
 - Any dead cell with exactly three live neighbours becomes a live cell (reproduction).
 
-# Requirements
-Python >3.6 and pygame
-- pip install -r requirements.txt
+# Requirements and Run
+Python >3.6 and pygame<br />
+`pip install -r requirements.txt`
+`python life.py`
 
 # License
 MIT
